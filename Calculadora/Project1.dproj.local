@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020/03/27 14:38:03.124,=C:\Users\Suporte05\Documents\Projetos Delphi\Lucas Ferraz\Unit1.pas</Transaction>
+    <Transaction>2020/03/27 15:19:55.310,C:\Users\Suporte05\Documents\Projetos Delphi\Lucas Ferraz\Calculadora\Unit1.dfm=C:\Users\Suporte05\Documents\Projetos Delphi\Lucas Ferraz\Unit1.dfm</Transaction>
+    <Transaction>2020/03/27 15:19:55.310,C:\Users\Suporte05\Documents\Projetos Delphi\Lucas Ferraz\Calculadora\Unit1.pas=C:\Users\Suporte05\Documents\Projetos Delphi\Lucas Ferraz\Unit1.pas</Transaction>
+    <Transaction>2020/03/27 15:19:58.294,C:\Users\Suporte05\Documents\Projetos Delphi\Lucas Ferraz\Calculadora\Project1.dproj=C:\Users\Suporte05\Documents\Projetos Delphi\Lucas Ferraz\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
