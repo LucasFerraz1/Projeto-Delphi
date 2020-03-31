@@ -1,0 +1,54 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Menus;
+
+type
+  TForm1 = class(TForm)
+    MainMenu1: TMainMenu;
+    Inicio1: TMenuItem;
+    Login1: TMenuItem;
+    Logout1: TMenuItem;
+    Logout2: TMenuItem;
+    Senhadousurio1: TMenuItem;
+    Sair1: TMenuItem;
+    procedure Sair1Click(Sender: TObject);
+    procedure Login1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit2;
+
+
+procedure TForm1.Login1Click(Sender: TObject);
+begin
+       try
+    Form2 := TForm2.Create(nil);
+    Form2.ShowModal;
+  finally
+    FreeAndNil(Form2);
+  end;
+end;
+
+procedure TForm1.Sair1Click(Sender: TObject);
+  var _sair : integer;
+begin
+  _sair := MessageDlg('Deseja sair do sistema', mtConfirmation, [mbYes, mbNo], 0);
+  if _sair = 6 then
+    Close;
+end;
+
+end.

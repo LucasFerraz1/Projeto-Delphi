@@ -1,0 +1,55 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Menu'
+  ClientHeight = 248
+  ClientWidth = 563
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object LbDate: TLabel
+    Left = 386
+    Top = 216
+    Width = 161
+    Height = 13
+    Caption = 'LbDate'
+  end
+  object MainMenu1: TMainMenu
+    object Inicio1: TMenuItem
+      Caption = 'Inicio'
+      object Login1: TMenuItem
+        Caption = 'Usu'#225'rios'
+        OnClick = Login1Click
+      end
+      object Senhadousurio1: TMenuItem
+        Caption = 'Senha do usu'#225'rio'
+      end
+      object Sair1: TMenuItem
+        Caption = 'Sair'
+        OnClick = Sair1Click
+      end
+    end
+    object Cadastro1: TMenuItem
+      Caption = 'Cadastro'
+      object Clientes1: TMenuItem
+        Caption = 'Clientes'
+      end
+      object Produto1: TMenuItem
+        Caption = 'Produto'
+      end
+    end
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 440
+    Top = 160
+  end
+end
